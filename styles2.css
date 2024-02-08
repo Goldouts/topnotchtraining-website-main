@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px; /* Adjusted size for header logo in index2.html */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.button {
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    color: blue; /* Change to the desired color when hovered */
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.front-page-logo {
+    max-width: 300px; /* Adjusted size for front-page logo in index2.html */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.join-now-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform animation */
+}
+
+.join-now-button:hover {
+    background-color: lightblue;
+    transform: scale(1.1); /* Added scale animation */
+    cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 160px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,223 @@
+<html lang="en">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-index.css">
+    <link rel="icon" href="images/littlelogo.png" type="image/png" sizes="16x16"> <!-- Favicon -->
+    <title>Top Notch Wrestling</title>
+</head>
+
+<body>
+
+
+
+    <style>
+        @media only screen and (max-width: 768px) {
+            /* Remove the display: none property */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <div class="logo">
+        <img src="images/Top Notch Wrestling.png" alt="Top Notch Wrestling Logo" class="header-logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home" class="button">Home</a></li>
+            <li class="dropdown">
+                <a href="#about" class="button">About</a>
+                <div class="dropdown-content">
+                    <a href="#schedule">Schedule</a>
+                    <a href="#our-story">Our Story</a>
+                </div>
+            </li>
+            <li><a href="#contact" class="button">Contact</a></li>
+            <li><a href="joinnow.html" class="button header-join-now">Join Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        
+        smoothScrollLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100, // Adjust as needed
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Smooth scroll for dropdown menu links
+        const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100, // Adjust as needed
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+
+    
+    
+    <main class="background-section">
+        <div class="front-page">
+            <img src="images/Top Notch.png" alt="Top Notch Boxing Logo" class="front-page-logo">
+            <a href="joinnow.html" class="join-now-button">Join Now</a>
+
+        </div>
+    </main>
+
+    <section class="about-section" id="about1">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Top Notch Wrestling Academy</h2>
+                <p>Our community has a rich tradition of nurturing passionate wrestlers and promoting the spirit of sportsmanship.
+                With state-of-the-art training facilities and dedicated coaching staff, we strive to empower athletes to reach their full potential.
+                Join us in the thrilling journey of grappling, takedowns, and triumphs as we continue to build a legacy in the world of wrestling.</p>
+            </div>
+            <img src="images/Boo.jpg" alt="Wrestling Image" class="about-image">
+        </div>
+    </section>
+
+    <section class="about-section" id="about2">
+        <div class="about-content">
+            <img src="images/kidswon.jpg" alt="Wrestling Image" class="about-image">
+            <div class="about-text">
+                <h2>Kids Wrestling Program</h2>
+                <p>Our kids' wrestling program provides a safe and supportive environment for young athletes to develop fundamental wrestling skills
+                while fostering teamwork, discipline, and self-confidence. Join us as we help shape the next generation of wrestling champions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about3">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Meet Our Coaches</h2>
+                <p>Our experienced coaching staff brings a wealth of knowledge and expertise to our wrestling programs.
+                With personalized training plans and mentorship, our coaches are dedicated to helping each athlete achieve their goals and maximize their potential.</p>
+            </div>
+            <img src="images/andrew.jpeg" alt="Wrestling Image" class="about-image">
+        </div>
+    </section>
+
+    <!-- Add this to the end of your HTML body -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var aboutSections = document.querySelectorAll('.about-section');
+
+            aboutSections.forEach(function(section) {
+                var aboutContent = section.querySelector('.about-content');
+                var scrollPosition = window.scrollY;
+
+                if (scrollPosition > section.offsetTop - window.innerHeight + 100) {
+                    aboutContent.classList.add('show');
+                }
+            });
+        });
+
+        function scrollToSection(sectionSelector) {
+            var section = document.querySelector(sectionSelector);
+            window.scrollTo({
+                top: section.offsetTop - 100, // Adjust as needed
+                behavior: 'smooth'
+            });
+        }
+    </script>
+   
+    <section class="our-story-section" id="our-story">
+    <div class="our-story-content">
+        <h2 class="our-story-heading">Our Story</h2>
+        <p class="our-story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies auctor varius. Donec rutrum consequat neque eu consequat. Vivamus at nisi a nulla aliquet volutpat. Integer auctor nisi ut est malesuada, vel ultricies metus vestibulum. Ut non lectus in quam tempor laoreet. Duis luctus vehicula dui, vel interdum ligula. Vestibulum bibendum sit amet lorem sed convallis. Sed vitae semper purus. Quisque sagittis, libero ac bibendum vehicula, nisi odio vehicula purus, vel tempor elit lorem nec ex. Morbi ac velit et nunc hendrerit dignissim.</p>
+    </div>
+</section>
+
+    
+    <section class="schedule-section" id="schedule">
+    <div class="schedule-content">
+        <h2 class="schedule-heading">Class Schedule</h2>
+        <div class="schedule-table-container">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>6:00 PM - 7:30 PM</td>
+                        <td>Beginner Wrestling</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>6:00 PM - 7:30 PM</td>
+                        <td>Advanced Techniques</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>6:00 PM - 7:30 PM</td>
+                        <td>Open Mat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+    
+    <section class="contact-section" id="contact">
+    <div class="contact-content">
+        <h2 class="contact-heading">Contact Us</h2>
+        <div class="contact-info">
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@topnotchwrestling.com</p>
+        </div>
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11368.630210257038!2d-104.7000415!3d40.4019261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876ea1996b300003%3A0x2743ce30bddee50d!2sNorth%20Hall!5e0!3m2!1sen!2sus!4v1643711971895!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+ <!-- Bottom Header -->
+    <footer>
+        <div class="bottom-header">
+            <div class="social-media">
+                <a href="https://www.instagram.com/topnotchwrestlingclub?igsh=MTJqMGY5Z21zNXVjOA==" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@topnotchwrestling.com</p>
+            </div>
+            <div class="location">
+                <p>Location: North Hall, Colorado, USA</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+/* Styles for joinnow.html */
+
+/* Pricing Section */
+.pricing-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.plan {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.plan h3 {
+    margin-top: 0;
+}
+
+.plan button {
+    background-color: #0373fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.plan button:hover {
+    background-color: #065fd4;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Bottom Header Styles */
+.bottom-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.contact-info p,
+.location p {
+    margin: 5px 0;
+}
